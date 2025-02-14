@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		E17AF21A2D5DC7D1002DEE42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E17AF1F92D5DB59C002DEE42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17AF2002D5DB59C002DEE42;
+			remoteInfo = TUTKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E17AF2012D5DB59C002DEE42 /* TUTKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TUTKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E17AF2162D5DC7D1002DEE42 /* TUTKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TUTKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = TUTKDemo;
 			sourceTree = "<group>";
 		};
+		E17AF2172D5DC7D1002DEE42 /* TUTKDemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TUTKDemoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E17AF1FE2D5DB59C002DEE42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17AF2132D5DC7D1002DEE42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E17AF2032D5DB59C002DEE42 /* TUTKDemo */,
+				E17AF2172D5DC7D1002DEE42 /* TUTKDemoTests */,
 				E17AF2022D5DB59C002DEE42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E17AF2012D5DB59C002DEE42 /* TUTKDemo.app */,
+				E17AF2162D5DC7D1002DEE42 /* TUTKDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = E17AF2012D5DB59C002DEE42 /* TUTKDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E17AF2152D5DC7D1002DEE42 /* TUTKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E17AF21C2D5DC7D1002DEE42 /* Build configuration list for PBXNativeTarget "TUTKDemoTests" */;
+			buildPhases = (
+				E17AF2122D5DC7D1002DEE42 /* Sources */,
+				E17AF2132D5DC7D1002DEE42 /* Frameworks */,
+				E17AF2142D5DC7D1002DEE42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E17AF21B2D5DC7D1002DEE42 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E17AF2172D5DC7D1002DEE42 /* TUTKDemoTests */,
+			);
+			name = TUTKDemoTests;
+			packageProductDependencies = (
+			);
+			productName = TUTKDemoTests;
+			productReference = E17AF2162D5DC7D1002DEE42 /* TUTKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					E17AF2002D5DB59C002DEE42 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					E17AF2152D5DC7D1002DEE42 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = E17AF2002D5DB59C002DEE42;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				E17AF2002D5DB59C002DEE42 /* TUTKDemo */,
+				E17AF2152D5DC7D1002DEE42 /* TUTKDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E17AF1FF2D5DB59C002DEE42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E17AF2142D5DC7D1002DEE42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E17AF2122D5DC7D1002DEE42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E17AF21B2D5DC7D1002DEE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E17AF2002D5DB59C002DEE42 /* TUTKDemo */;
+			targetProxy = E17AF21A2D5DC7D1002DEE42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E17AF20D2D5DB59C002DEE42 /* Debug */ = {
@@ -300,6 +375,42 @@
 			};
 			name = Release;
 		};
+		E17AF21D2D5DC7D1002DEE42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jill.app.TUTKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUTKDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TUTKDemo";
+			};
+			name = Debug;
+		};
+		E17AF21E2D5DC7D1002DEE42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jill.app.TUTKDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TUTKDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TUTKDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +428,15 @@
 			buildConfigurations = (
 				E17AF2102D5DB59C002DEE42 /* Debug */,
 				E17AF2112D5DB59C002DEE42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E17AF21C2D5DC7D1002DEE42 /* Build configuration list for PBXNativeTarget "TUTKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E17AF21D2D5DC7D1002DEE42 /* Debug */,
+				E17AF21E2D5DC7D1002DEE42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
