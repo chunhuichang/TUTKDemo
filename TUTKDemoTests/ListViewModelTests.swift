@@ -38,7 +38,7 @@ private extension ListViewModelTests {
     }
 }
 
-private class MockUserServiceProtocol: UserServiceProtocol {
+private struct MockUserServiceProtocol: UserServiceProtocol {
     private let shouldReturnError: Bool
 
     init(shouldReturnError: Bool) {
