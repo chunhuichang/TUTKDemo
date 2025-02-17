@@ -14,7 +14,7 @@ struct HomeView: View {
                 ListView()
             }
             Tab("Info", systemImage: "info.circle") {
-                Text("Info")
+                InfoView()
             }
         }
     }
